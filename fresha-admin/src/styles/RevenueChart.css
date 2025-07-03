@@ -1,0 +1,91 @@
+.revenue-chart {
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  }
+  
+  .revenue-chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .revenue-chart-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+  
+  .revenue-chart-value {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.25rem;
+  }
+@media (max-width: 600px){
+  .revenue-chart-value{
+    flex-direction: column;
+  }
+}
+  
+  .revenue-chart-amount {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .revenue-chart-period {
+    font-size: 0.875rem;
+    color:  var(--text-color);
+  }
+  
+  .revenue-chart-bars {
+    padding-top: 5rem;
+    height: 16rem;
+    display: flex;
+    /* align-items: flex-end; */
+    justify-content: space-between;
+  }
+  
+  .chart-bar-container {
+    width: 3rem;
+    height: 100%;
+    background-color: #EEF2FF;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    position: relative;
+  }
+  
+  .chart-bar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #4F46E5;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    transition: all 0.3s;
+  }
+  
+  .chart-bar:hover {
+    filter: brightness(110%);
+  }
+  
+  .chart-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    color:  var(--text-color);
+  }
+  @media (max-width: 585px){
+    .chart-bar-container{
+      width:1rem;
+    }
+    .chart-labels{
+     display: none;
+    }
+  }
+  .verticle_dots{
+    border: none;
+    background-color: var(--bg_card);
+    color: var(--text-color);
+  }

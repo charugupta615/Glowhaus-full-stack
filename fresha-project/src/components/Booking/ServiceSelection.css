@@ -1,0 +1,100 @@
+.booking-container {
+    display: flex;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    gap: 2rem;
+  }
+  
+  .left-section {
+    flex: 2;
+  }
+  
+  .right-section {
+    flex: 1;
+  }
+  
+  .section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .service-card {
+    margin-bottom: 1rem;
+    border: 1px solid #e0e0e0;
+    transition: border-color 0.3s;
+  }
+  
+  .service-card.selected {
+    border-color: #1677ff;
+    background: #f0f5ff;
+  }
+  
+  .service-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .discount {
+    color: green;
+    font-size: 14px;
+  }
+  
+  .summary-card {
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+  }
+  
+  .summary-header {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .salon-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  /* .location {
+    color: gray;
+    font-size: 20px;
+  } */
+  
+  .summary-total {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    padding: 1rem 0;
+    border-top: 1px solid #eee;
+  }
+  
+  .continue-btn {
+    width: 100%;
+  }
+  
+  .breadcrumb {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 14px;
+    margin-bottom: 1rem;
+  }
+  
+  .breadcrumb .active {
+    font-weight: bold;
+  }
+  
+  .breadcrumb .clickable {
+    color: #1677ff;
+    cursor: pointer;
+  }
+  
+  .breadcrumb .disabled {
+    color: #aaa;
+  }
+  
+  

@@ -1,0 +1,112 @@
+.store-card {
+  width: 100%;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: white;
+}
+
+.store-heading {
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+
+.rating-section {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.star-icon {
+  color: black;
+  margin-left: 8px;
+}
+
+.reviews {
+  margin-left: 8px;
+  color: #555;
+}
+
+.featured-tag {
+  color: blue;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 10px 22px;
+  font-size: 15px;
+  background-color: white;
+}
+
+.book-now1 {
+  background-color: black;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-size: 20px;
+  height: 50px;
+  color: white;
+}
+
+.store-status {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 12px;
+  margin-top: 40px;
+}
+
+.status-icon {
+  color: green;
+  margin-right: 8px;
+}
+
+.status-text {
+  color: #1890ff;
+}
+
+.dropdown-content {
+  margin-top: 12px;
+  padding: 12px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.timing-item {
+  padding: 8px 0;
+  font-size: 16px;
+}
+
+.timing-item span {
+  color: #333;
+}
+
+/* Highlight today with blue and bold text */
+.timing-item.today {
+  background-color: #e6f7ff;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+/* Highlight tomorrow with a light yellow shade */
+.timing-item.tomorrow {
+  background-color: #fff3cd;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.store-address {
+  display: flex;
+  align-items: center;
+  font-size: 26px;
+  margin-top: 12px;
+  transition: all 0.3s ease;
+}
+
+.address-icon {
+  color: green;
+  margin-right: 8px;
+}
+
+.address-down {
+  margin-top: 24px;
+}

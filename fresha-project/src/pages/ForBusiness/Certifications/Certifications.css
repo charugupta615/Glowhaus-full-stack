@@ -1,0 +1,30 @@
+.certifications {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    gap: 80px;
+  }
+  
+  .certification-image {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+  }
+  
+  .certification-image:hover {
+    transform: scale(1.1);
+  }
+  @media (max-width: 768px) {
+    .certification-image {
+      width: 120px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .certification-image {
+      width: 100px;
+    }
+  }

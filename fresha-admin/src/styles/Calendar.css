@@ -1,0 +1,41 @@
+.fc .fc-toolbar {
+    background-color:var(--card-bg);
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .fc .fc-toolbar-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--text-color);
+  }
+  
+  .fc .fc-button {
+    /* background-color: #ff5e57; */
+    border: none;
+    border-radius: 6px;
+    color: white;
+    padding: 6px 10px;
+  }
+  
+  
+  .fc-event-title {
+    white-space: normal;
+    word-wrap: break-word; 
+  }
+  
+  @media(max-width:610px){
+    .fc .fc-button-group{
+        display: none;
+    }
+  }
+  .new-event{
+    border: none;
+    padding: 1rem;
+    margin: 1rem 0;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--text-color);
+    background-color: #ffbb33;
+    border-radius: 2rem;
+  }

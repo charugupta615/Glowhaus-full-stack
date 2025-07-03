@@ -1,0 +1,181 @@
+.appointment-page-container {
+  padding: 60px;
+  font-family: Arial, sans-serif;
+}
+
+.app-heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+
+.appointment-category-tabs {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.appointment-tab-btn {
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.appointment-tab-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.appointment-active {
+  background-color: #007bff;
+  color: white;
+}
+
+.appointment-main {
+  display: flex;
+}
+
+.appointment-service-list {
+  flex: 1;
+}
+
+.sev-heading {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.appointment-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.appointment-card:hover {
+  background-color: #f9f9f9;
+}
+
+.selected-card {
+  background-color: #e6f7ff;
+  border-color: #007bff;
+}
+
+.seva-heading {
+  font-size: 18px;
+  margin: 0;
+}
+
+.seva-para, .seava-para1 {
+  margin: 5px 0;
+}
+
+
+.appointment-plus {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+.appointment-summary-container {
+  width: 500px;
+  margin-left: 20px;
+}
+
+.appointment-summary {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.summary-heading {
+  margin-bottom: 10px;
+}
+
+.summary-para {
+  color: #888;
+}
+
+.appointment-summary-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.item-para2 {
+  font-weight: bold;
+}
+
+.appointment-continue-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.appointment-continue-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  padding: 20px;
+  border-radius: 8px;
+  width: 600px;
+  text-align: center;
+}
+
+.modal-close-btn {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-heading {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.modal-para {
+  margin: 10px 0;
+}
+
+button.button-click {
+  background-color: #007bff;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+.button-click:hover {
+  background-color: #0056b3;
+}
+
+.button-click:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

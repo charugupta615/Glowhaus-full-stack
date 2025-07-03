@@ -1,0 +1,110 @@
+/* Section Styling */
+.reviews-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .review-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    padding-left: 20px;
+  }
+  
+  /* Container for Reviews with Smooth Scroll */
+  .reviews-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  
+  .reviews-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari */
+  }
+  
+  /* Review Card Design */
+  .review-card {
+    background: rgb(230, 230, 244);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    padding: 20px;
+    min-width: calc((100% / 4) - 20px); /* Show 4 cards by default */
+    max-width: calc((100% / 4) - 20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Stars and Review Content */
+  .stars {
+    color: black;
+    margin-bottom: 10px;
+  }
+  
+  .review-title2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .review-title2 h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .review-title2 p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0;
+  }
+  
+  /* Reviewer Info */
+  .reviewer-info {
+    display: flex;
+    align-items: center;
+    margin-top: auto; /* Pushes to the bottom */
+  }
+  
+  .reviewer-info img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 12px;
+  }
+  
+  .reviewer-info h4 {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  .reviewer-info p {
+    color: gray;
+    font-size: 0.875rem;
+    margin: 4px 0 0;
+  }
+  
+  /* Responsive Design Adjustments */
+  @media (max-width: 1024px) {
+    .review-card {
+      min-width: calc((100% / 3) - 20px);
+      max-width: calc((100% / 3) - 20px); /* 3 cards on medium screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .review-card {
+      min-width: calc((100% / 2) - 20px);
+      max-width: calc((100% / 2) - 20px); /* 2 cards on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .review-card {
+      min-width: 100%;
+      max-width: 100%; /* 1 card on mobile screens */
+    }
+  }
+  

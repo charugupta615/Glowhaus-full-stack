@@ -1,0 +1,50 @@
+/* Business Overview Section */
+.business-overview {
+    margin-top: 80px;
+    background-color: #ede9fe;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.business-overview h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.business-overview p {
+    font-size: 1.2rem;
+    color: #333;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+/* Business Features Section */
+.business-features {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    flex: 1;
+    text-align: left;
+    max-width: 350px;
+}
+
+.feature-card h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}

@@ -1,0 +1,115 @@
+.login-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .left-sec {
+    width: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .login-content {
+    text-align: left;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  /* Back Arrow */
+  .back-arrow {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+  }
+  
+  .back-arrow:hover {
+    color: black;
+  }
+  
+  .login-heading {
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+    color: black;
+  }
+  
+  .login-option {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .login-option:hover {
+    background-color: #f0f0f0;
+    border-color: #999;
+  }
+  
+  .log-heading,
+  .opt-heading {
+    margin: 0;
+    font-size: 1.25rem;
+    color: black;
+  }
+  
+  .log-para,
+  .opt-para {
+    margin: 5px 0 0;
+    color: #333;
+    font-size: 0.9rem;
+  }
+  
+  /* Footer - Center at Bottom */
+  .footer-links1 {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .fot-para {
+    color: #6c63ff;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+  
+  .fot-para:hover {
+    text-decoration: underline;
+  }
+  
+  /* Right Section */
+  .right-sec {
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .login-container {
+      flex-direction: column;
+    }
+    
+    .left-sec,
+    .right-sec {
+      width: 100%;
+      height: 50vh;
+    }
+  
+    .footer-links1 {
+      bottom: 10px;
+    }
+  }
+  

@@ -1,0 +1,66 @@
+   .platform {
+    text-align: center;
+    padding: 60px;
+    background-color: #f9f9f9;
+  }
+  
+  .platform-header h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .platform-header p {
+    font-size: 14px;
+    color: #666;
+    max-width: 840px;
+    margin: 0 auto 30px;
+  }
+  
+  .get-started-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 28px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .get-started-btn:hover {
+    background-color: #333;
+  }
+  
+  .services-grid1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 60px;
+  }
+  
+  .service-card1 {
+    background-size: cover;
+    background-position: center;
+    height: 390px;
+    border-radius: 12px;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .service-card1:hover {
+    transform: translateY(-5px);
+  }
+  
+  .service-info1 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .arrow {
+    font-size: 24px;
+  }

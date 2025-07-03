@@ -1,0 +1,77 @@
+.header-nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    /* padding: 1rem; */
+    background-color: white;
+    /* border-bottom: 1px solid #e5e7eb; */
+  }
+  
+  .nav-icons {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 1rem;
+  }
+  
+  .nav-icon-btn {
+    border:none;
+    position: relative;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+  
+  .nav-icon-btn:hover {
+    background-color: var(--card-bg);
+  }
+  
+  .notification-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 8px;
+    height: 8px;
+    background-color: #ef4444;
+    border-radius: 50%;
+    border: 2px solid white;
+  }
+  
+  .user-profile {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-left: 1rem;
+    padding-left: 1rem;
+    border-left: 1px solid #e5e7eb;
+  }
+  
+  .user-avatar {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .user-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .user-name {
+    font-weight: 600;
+    color: var(--text-color);
+  }
+  
+  .user-role {
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
+  @media(max-width:768px){
+    .user-info{
+      display: none;
+    }
+  }

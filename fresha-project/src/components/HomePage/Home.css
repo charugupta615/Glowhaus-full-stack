@@ -1,0 +1,172 @@
+.container {
+    min-height: 100vh;
+    background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+    padding-top: 150px;
+  }
+  
+  
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .main-heading {
+    font-size: 5rem;
+    font-weight: bold;
+    color: black;
+    font-family: 'PlayFair Display', serif;
+    text-align: left;
+  }
+  
+  .search-bar {
+    margin-top: 30px;
+    padding: 5px;
+    display: flex;
+    background-color: white;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.1);
+  }
+  
+  .search-section {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-right: 1px solid #e0e0e0;
+  }
+  
+  .search-section input {
+    border: none;
+    outline: none;
+    margin-left: 10px;
+  }
+  
+  .search-button {
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 40px;
+  }
+  
+  .appointment-count {
+    margin-top: 40px;
+    color: black;
+    font-size: 20px;
+  }
+  
+  .app-button {
+    margin-top: 50px;
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+
+  @media (max-width: 1024px) {
+    .search-bar {
+        flex-direction: column; 
+        gap: 15px; 
+        border-radius: 30px; 
+        padding: 15px; 
+    }
+    .search-section {
+        border-right: none; 
+        border-bottom: 1px solid #e0e0e0; 
+        padding: 10px; 
+    }
+
+    .search-button {
+        width: 100%; 
+        padding: 12px 20px; 
+    }
+
+    .app-button {
+        padding: 12px 24px; 
+        font-size: 16px; 
+    }
+}
+
+  
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+  
+    .logo {
+      font-size: 22px;
+    }
+  
+    .header-buttons {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+  
+    .business-btn,
+    .menu-btn {
+      padding: 10px 20px;
+    }
+  
+    .main-heading {
+      font-size: 3.5rem;
+      text-align: center;
+    }
+  
+    .search-bar {
+      flex-direction: column;
+      border-radius: 20px;
+      gap: 10px;
+    }
+  
+    .search-section {
+      border-right: none;
+      border-bottom: 1px solid #e0e0e0;
+      padding: 10px;
+    }
+  
+    .search-button {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logo {
+      font-size: 20px;
+    }
+  
+    .business-btn,
+    .menu-btn {
+      font-size: 12px;
+      padding: 8px 16px;
+    }
+  
+    .main-heading {
+      font-size: 2.5rem;
+    }
+  
+    .search-section input {
+      width: 100%;
+    }
+  
+    .app-button {
+      padding: 12px 24px;
+    }
+  }
+  

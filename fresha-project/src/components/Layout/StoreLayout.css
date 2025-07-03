@@ -1,0 +1,18 @@
+.store-layout {
+    display: flex;
+  }
+  
+  .content-section {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+  }
+  
+  .store-info-section {
+    width: 550px;
+    padding: 20px;
+    position: sticky;
+    top:50px;
+    height: 140vh;
+  }
+  

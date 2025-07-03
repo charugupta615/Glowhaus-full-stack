@@ -1,0 +1,158 @@
+.reviews-wrapper {
+    padding: 30px 50px;
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    color: #1c1c1c;
+  }
+  
+  .back-button {
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .page-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .review-count {
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .review-content {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .review-list {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .review-entry {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 25px;
+  }
+  
+  .review-user {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .user-avatar {
+    background-color: #cfcfcf;
+    color: white;
+    border-radius: 50%;
+    font-weight: bold;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+  }
+  
+  .user-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .review-date {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .review-stars {
+    font-size: 18px;
+    color: #000;
+    margin-top: 8px;
+  }
+  
+  .review-text {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  
+  .review-sidebar {
+    flex: 1;
+    border-left: 1px solid #eee;
+    padding-left: 20px;
+  }
+  
+  .rating-summary {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  
+  .star-row {
+    font-size: 26px;
+    color: #000;
+  }
+  
+  .filter-block {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+  }
+  
+  .filter-row {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    gap: 10px;
+  }
+  
+  .star-label {
+    width: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .review-count-text {
+    width: 30px;
+    font-size: 14px;
+    text-align: right;
+    color: #555;
+  }
+  
+  .filter-bar1 {
+    flex: 1;
+    background-color: #eee;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0 10px;
+  }
+  
+  .filter-bar-fill {
+    height: 100%;
+    background-color: #ffc107; /* Golden yellow */
+    border-radius: 5px;
+  }
+  
+  .trust-box {
+    margin-top: 40px;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    background: #f9f9f9;
+  }
+  
+  .trust-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .trust-sub {
+    font-size: 14px;
+    color: #555;
+  }
+  

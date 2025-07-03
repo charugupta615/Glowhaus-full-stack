@@ -1,0 +1,231 @@
+
+.header-nav,
+  .sidebar,
+  .main-content
+   {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+
+  .stat-card, .revenue-chart, .recent-activity {
+    background-color: var(--card-bg);
+  }
+.app {
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .header {
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        padding: 1rem;
+        transition: background-color 0.3s, color 0.3s;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .header-container {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  @media (min-width: 640px) {
+    .header-container {
+      padding: 0 1.5rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .header-container {
+      padding: 0 2rem;
+    }
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  @media (max-width: 600px){
+    .header-content{
+        flex-direction: column;
+    } 
+  }
+  
+  .header-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 12px;
+    color: var(--text-color);
+  }
+
+  .main-container {
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  
+  @media (min-width: 640px) {
+    .main-container {
+      padding: 2rem 1.5rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .main-container {
+      padding: 2rem;
+    }
+  }
+  
+  .stats-grid {
+    display: grid;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  @media (min-width: 768px) {
+    .stats-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1245px) {
+    .stats-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  .charts-grid {
+    display: grid;
+    gap: 1.5rem;
+  }
+  
+  @media (min-width: 1245px) {
+    .charts-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (max-width: 768px) {
+    .charts-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+  }
+  
+  .recent-activity {
+    background-color: var(--card-bg);
+  color: var(--text-color);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .recent-activity-header {
+    /* background-color: var(--card-header-bg); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .recent-activity-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+  
+  .view-all-button {
+    font-size: 0.875rem;
+    color: #4239e3;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    border: none;
+    padding: 1rem;
+    background-color: #e7e4ff;
+    border-radius: 1rem;
+  }
+  @media(max-width:600px){
+    .view-all-button{
+        display: none;
+    }
+  }
+  .toggle-button {
+  background: white;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  margin-right: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+    color: var(--text-color);
+  }
+ 
+  /* Hide sidebar and adjust content */
+  .main-content.no-sidebar {
+    margin-left: 60px;
+    
+  }
+  .toggle-button.left-collapsed {
+    left: 5.5rem;
+  }
+  
+  .main-content.with-sidebar {
+    margin-left: 250px;
+  }
+  
+  .view-all-button:hover {
+    color: #4338CA;
+  }
+  
+  .activity-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .activity-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    background-color: var(--card-bg);
+  color: var(--text-color);
+    transition: background-color 0.2s;
+  }
+
+  
+  .activity-item:hover {
+    background-color:  var(--hover-color);
+  }
+  
+  .activity-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--card-bg);
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .activity-icon svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: var(--text-color);
+
+  }
+  
+  .activity-content h4 {
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+  
+  .activity-time {
+    font-size: 0.875rem;
+    color: #6B7280;
+  }

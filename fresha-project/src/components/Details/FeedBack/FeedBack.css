@@ -1,0 +1,104 @@
+.feedback-section {
+  padding: 40px 20px;
+  margin-left: 30px;
+  background-color: #f9f9f9;
+}
+
+.feedback-heading {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.feedback-summary {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.feedback-rating-summary {
+  color: #ffa500;
+  font-weight: bold;
+}
+
+.total-reviews {
+  color: black;
+}
+
+/* Responsive grid layout for 2-column design */
+.feedback-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 16px;
+}
+
+/* Card Design */
+.feedback-card {
+  padding: 20px;
+}
+
+.feedback-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+/* Avatar Styling */
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ccc;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.feedback-date {
+  color: #999;
+}
+
+.feedback-rating {
+  color: #ffa500;
+  margin: 8px 0;
+}
+
+.feedback-comment {
+  color: #333;
+}
+
+/* Read More Link */
+.read-more {
+  color: #007bff;
+  cursor: pointer;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .feedback-container {
+    grid-template-columns: 1fr;
+  }
+}
+.see-all-button {
+  margin-top: 1rem;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 15px;
+  transition: background 0.3s ease;
+}
+
+.see-all-button:hover {
+  background-color: #333;
+}
+
+.review-date {
+  font-size: 0.8rem;
+  color: gray;
+}
+

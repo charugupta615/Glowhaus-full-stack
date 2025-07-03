@@ -1,0 +1,67 @@
+/* Software Section */
+.software-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+.software-content {
+    flex: 1;
+    max-width: 50%;
+    line-height: 2rem;
+}
+
+.software-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #000;
+    line-height: 1.2;
+}
+
+.software-content .highlight {
+    color: #d946ef; /* Light purple */
+}
+
+.software-content .description {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 20px 0;
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+}
+
+.features-list li {
+    font-size: 1.1rem;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.features-list .checkmark {
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.software-images {
+    flex: 1;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image,
+.calendar-image {
+    width: 250px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 4px solid #ede9fe;
+}

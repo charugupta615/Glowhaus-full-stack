@@ -1,0 +1,23 @@
+:root {
+    --bg-color: #ffffff;
+  --text-color: #111827;
+  --card-bg: #f9fafb;
+  --card-header-bg: #ffffff;
+  --hover-color:#ffffff;
+  --border-color:#E5E7EB;
+  --teams-card:rgb(40, 92, 120);
+  }
+  
+  [data-theme='dark'] {
+    --bg-color: #1f2937;
+  --text-color: #f9fafb;
+  --card-bg: #363f4f;
+  --card-header-bg: #363f4f;
+  --hover-color:#2a313d;
+  --border-color:none;
+  --teams-card:rgb(116, 160, 241);
+  }
+  body{
+    margin: 0;
+  }
+  

@@ -1,0 +1,108 @@
+ .header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px 40px;
+  background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.business-btn,
+.menu-btn {
+  background-color: white;
+  color: black;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  padding: 12px 8px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.business-btn:hover,
+.menu-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown-wrapper {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-menu li {
+  padding: 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.dropdown-menu li:hover {
+  background-color: #f0f0f0;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+.profile-btn {
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 16px;
+  margin-left: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.profile-btn:hover {
+  color: #007bff;
+}
+
+.profile-icon {
+  font-size: 18px;
+}
+.favorites-btn {
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.favorites-icon {
+  margin-right: 0.5rem;
+  color: red; /* or any color you prefer */
+}

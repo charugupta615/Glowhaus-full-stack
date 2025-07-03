@@ -1,0 +1,97 @@
+.venues-page {
+    padding: 40px;
+    font-family: Arial, sans-serif;
+    margin-left: 30px;
+  }
+  
+  .venue-heading {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  /* Scrollable Container */
+  .venues-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For IE and Edge */
+    scroll-snap-type: x mandatory;
+    padding-bottom: 10px;
+  }
+  
+  /* Hide scrollbar for Webkit (Chrome, Safari) */
+  .venues-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Venue Card Styling */
+  .venue-card {
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    min-width: calc(25% - 20px); /* 4 Cards at a time */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    scroll-snap-align: start;
+  }
+  
+  .venue-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .venue-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  /* Venue Info */
+  .venue-name {
+    font-size: 18px;
+    margin: 10px;
+    color: #000;
+  }
+  
+  .venue-details {
+    margin: 0 10px;
+  }
+  
+  .venue-rating {
+    font-size: 14px;
+    color: black;
+    margin-bottom: 2px;
+  }
+  
+  .venue-address {
+    font-size: 14px;
+    color: grey;
+  }
+  
+  /* Category Button */
+  .venue-category {
+    background-color: #e0e0e0;
+    border: none;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    color: #333;
+    padding: 5px 12px;
+    border-radius: 16px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 900px) {
+    .venue-card {
+      min-width: calc(50% - 20px); /* 2 Cards at a time */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .venue-card {
+      min-width: 100%; /* 1 Card at a time */
+    }
+  }
+  

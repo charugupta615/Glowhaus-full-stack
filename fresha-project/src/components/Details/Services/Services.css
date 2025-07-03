@@ -1,0 +1,134 @@
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .services-list {
+    padding: 40px;
+  }
+  
+  h2.services-heading {
+    margin-bottom: 20px;
+    font-size: 40px;
+  }
+  
+  .filter-buttons {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .service-card {
+    margin-bottom: 20px;
+  }
+  
+  .service-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .service-card .n-ser-btn {
+    background-color: #1890ff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .service-card .n-ser-btn:hover {
+    background-color: #40a9ff; /* Example: Hover color */
+  }
+  
+  .service-card .n-ser-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2); /* Focus effect */
+  }
+  
+  .store-info {
+    width: 35%;
+  }
+  
+  .store-card {
+    padding: 20px;
+    border-radius: 12px;
+  }
+  
+  .rating {
+    display: flex;
+    align-items: center;
+  }
+  
+  .reviews {
+    color: blue;
+    margin-left: 8px;
+  }
+  
+  .status {
+    color: green;
+  }
+  
+  .address {
+    color: #333;
+  }
+  
+  .book-now {
+    margin-top: 15px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .services-list {
+      width: 55%;
+    }
+  
+    .store-info {
+      width: 40%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .services-container {
+      flex-direction: column;
+    }
+  
+    .services-list,
+    .store-info {
+      width: 100%;
+      padding: 20px 0;
+    }
+  
+    .filter-buttons {
+      justify-content: center;
+    }
+  
+    h2.services-heading {
+      font-size: 32px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h2.services-heading {
+      font-size: 28px;
+    }
+  
+    .filter-buttons {
+      gap: 10px;
+    }
+  
+    .service-info {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .book-now {
+      width: 100%;
+    }
+  }
+  

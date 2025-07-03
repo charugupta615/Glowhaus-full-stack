@@ -1,0 +1,123 @@
+.browse-by-city {
+    font-family: Arial, sans-serif;
+    padding: 40px;
+    background-color: #fff;
+  }
+  
+  /* Heading */
+  .city-heading {
+    font-size: 2rem;
+    padding: 20px;
+    font-weight: bold;
+  }
+  
+  /* Header Section for Heading and Country List */
+  .header-section {
+    display: flex;
+    padding: 20px;
+    margin-right: 30px;
+    flex-direction: column;
+  }
+  
+  /* Country Tabs with Horizontal Scroll (No Scrollbar Sign) */
+  .country-list {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px;
+    scrollbar-width: none;
+  }
+  
+  .country-list::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Country Button Styles */
+  button {
+    padding: 10px 24px;
+    background-color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  button.active {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  button:hover {
+    background-color: #ddd;
+  }
+  
+  /* City List with Horizontal Scroll - Show Only Four Cities Initially */
+  .city-list {
+    display: flex;
+    overflow-x: auto;
+    gap: 30px;
+    line-height: 30px;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+    scrollbar-width: none;
+  }
+  
+  .city-list::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* City Section - Pointer Cursor and No Hover Effect */
+  .city {
+    flex: 0 0 auto;
+    width: 250px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+  
+  /* City Heading */
+  .city h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+  
+  /* City Services List - No Bullet Points */
+  .city-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .city-list li {
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+  }
+  
+  /* No Data Message */
+  .no-data {
+    font-size: 1rem;
+    color: #999;
+  }
+  
+  /* Responsive Design for Smaller Screens */
+  @media (max-width: 1200px) {
+    .city {
+      width: 220px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .city {
+      width: 200px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .city {
+      width: 180px;
+    }
+  }
+  

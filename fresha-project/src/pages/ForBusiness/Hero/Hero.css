@@ -1,0 +1,35 @@
+.hero-container1 {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .hero-section1 {
+    background: linear-gradient(to right, #8a2be2, #ff1493);
+    color: white;
+    text-align: center;
+    padding: 6rem 2rem;
+  }
+  
+  .hero-heading1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-text1 {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero-button1 {
+    background: white;
+    color: black;
+    padding: 0.75rem 1.5rem;
+    border-radius: 999px;
+    font-weight: 500;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .hero-button1:hover {
+    transform: scale(1.05);
+  }

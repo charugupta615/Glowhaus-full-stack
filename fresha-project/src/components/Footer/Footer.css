@@ -1,0 +1,102 @@
+/* Footer Section */
+#footer {
+  background-color: #e9f0f8;
+  padding: 60px 20px;
+}
+
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col {
+  flex: 1 1 20%;
+  min-width: 200px;
+}
+
+/* Footer Heading */
+.footer-heading {
+  margin-bottom: 20px;
+  margin-left: 30px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h3 {
+  margin-bottom: 20px;
+  color: #000;
+}
+
+/* Paragraph Links */
+p {
+  color: black;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: color 0.3s;
+}
+
+p:hover {
+  color: #000;
+}
+
+/* App Download Button */
+.btn {
+  background-color: white;
+  margin-left: 30px;
+  color: black;
+  padding: 12px 24px;
+  margin-top: 20px;
+  border-radius: 24px;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.btn i {
+  margin-left: 10px;
+  font-size: 1.5rem;
+}
+
+/* Button Hover Effect */
+.btn:hover {
+  background-color: #333;
+}
+
+/* Social Icons */
+.col p i {
+  margin-right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .col {
+    margin-bottom: 30px;
+  }
+
+  .btn {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+}

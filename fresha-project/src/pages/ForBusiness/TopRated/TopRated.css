@@ -1,0 +1,103 @@
+/* Industry Section */
+.industry-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px;
+    text-align: left;
+  }
+  
+  .industry-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 15px;
+  }
+  
+  .industry-description {
+    font-size: 1.2rem;
+    color: #333;
+    max-width: 800px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+  }
+  
+  /* Content Layout */
+  .industry-content {
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none;
+    scrollbar-color: #ccc transparent;
+    gap: 40px;
+    padding-bottom: 20px;
+  }
+  
+  /* Customize Scrollbar for Webkit */
+  .industry-content::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .industry-content::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 10px;
+  }
+  
+  .industry-content::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
+  }
+  
+  /* Business Image */
+  .barber-image-container {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .barber-image {
+    width: 800px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Reviews Section */
+  .reviews-container1 {
+    flex: 0 0 auto;
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* Individual Review Card */
+  .review-card1 {
+    background: #fff;
+    width: 250px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .review-card1 h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .review-card1 p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.4;
+  }
+  
+  /* Stars */
+  .stars {
+    color: #facc15; 
+    font-size: 1.5rem;
+  }
+  
+  /* Reviewer Name */
+  .reviewer {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #666;
+    margin-top: 10px;
+  }
+  

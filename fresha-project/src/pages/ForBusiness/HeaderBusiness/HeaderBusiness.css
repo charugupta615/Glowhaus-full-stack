@@ -1,0 +1,57 @@
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: transparent;
+    position: relative;
+  }
+  
+  .logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .nav-links a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+  }
+  
+  .sign-up-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .sign-up-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .menu-icon {
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .menu-icon {
+      display: none;
+    }
+  }

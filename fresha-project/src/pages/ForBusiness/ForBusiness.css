@@ -1,0 +1,81 @@
+.for-business-container {
+  font-family: Arial, sans-serif;
+  padding: 80px;
+}
+
+.hero-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.button-group button {
+  margin: 10px;
+}
+
+.business-images1 {
+  position: relative;
+  justify-content: center;
+  display: flex;
+}
+
+.main-image1 {
+  width: 1250px;
+}
+
+.overlay-image1 {
+  position: absolute;
+  top: 20px;
+  right: 10%;
+  height: 70vh;
+}
+
+.statistics-section {
+  margin-top: 60px;
+  color: white;
+  text-align: center;
+  gap: 40px;
+}
+
+.stat-card1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+.stat-card1 h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.stat-card1 p1 {
+  color: white;
+  margin: 0;
+}
+
+.stat-card1 span {
+  color: white;
+}
+
+.statistics-section .stat-card {
+  display: inline-block;
+  margin: 0 40px;
+  text-align: center;
+}
+
+.stat-card h2 {
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.stat-card p {
+  color: white;
+}
+
+.stat-card p1 {
+  font-weight: 500;
+  font-size: 18px;
+}

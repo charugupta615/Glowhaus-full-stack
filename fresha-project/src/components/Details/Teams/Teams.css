@@ -1,0 +1,115 @@
+.teams-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+ h2.team-heading{
+    padding: 30px;
+    margin-left: 30px;
+    font-size: 30px;
+ } 
+  .team-list {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .team-members {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .team-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .team-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  .image-container {
+    position: relative;
+  }
+  
+  .team-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 8px;
+  }
+  
+  .rating-tag {
+    position: absolute;
+    bottom: 2px;
+    right: 10px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 20px;
+    padding: 2px 8px;
+    font-size: 12px;
+  }
+  
+  .info-container {
+    text-align: center;
+  }
+  
+  .member-heading {
+    font-size: 16px;
+    margin: 8px 0 4px;
+  }
+  
+  .team-para {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .see-all-btn {
+    margin-top: 16px;
+    cursor: pointer;
+    margin-left: 30px;
+  }
+  
+  .store-info {
+    width: 300px;
+  }
+  
+  .store-card {
+    padding: 20px;
+  }
+  
+  .rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .reviews {
+    margin-left: 8px;
+  }
+  
+  .status {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .address {
+    color: #555;
+  }
+  
+  @media (max-width: 900px) {
+    .team-members {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .team-members {
+      grid-template-columns: 1fr;
+    }
+  }
+  
