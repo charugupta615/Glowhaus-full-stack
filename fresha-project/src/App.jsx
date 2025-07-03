@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import BookingPage from './pages/book/BookingPage';
+import BookingPage from './pages/Book/BookingPage';
 import AppointmentPage from './pages/Book/AppointmentPage';
 import SelectProfessional from './pages/Book/SelectProfessional';
 import SelectTime from "./pages/Book/SelectTime";
