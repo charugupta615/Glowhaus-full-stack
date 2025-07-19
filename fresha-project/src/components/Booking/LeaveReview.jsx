@@ -29,7 +29,7 @@ export default function LeaveReview() {
 
     setLoading(true);
     try {
-      const res = await axios.post('http://localhost:5000/api/reviews/add', {
+      const res = await axios.post('https://glowhaus-full-stack.onrender.com/api/reviews/add', {
         business_id: businessId,
         customer_name: customerName.trim(),
         rating,

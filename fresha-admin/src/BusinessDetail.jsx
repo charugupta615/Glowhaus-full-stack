@@ -13,7 +13,7 @@ const BusinessDetail = () => {
   useEffect(() => {
     const fetchDetails = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/api/business/display/${id}`);
+        const res = await axios.get(`https://glowhaus-full-stack.onrender.com/api/business/display/${id}`);
         setBusiness(res.data);
         setLoading(false);
       } catch (error) {
@@ -37,7 +37,7 @@ const BusinessDetail = () => {
         <Row gutter={[24, 24]}>
           <Col xs={24} sm={8}>
             <Image
-              src={`http://localhost:5000${biz.main_image}`}
+              src={`https://glowhaus-full-stack.onrender.com${biz.main_image}`}
               alt={biz.name}
               style={{ borderRadius: '12px' }}
               width="100%"

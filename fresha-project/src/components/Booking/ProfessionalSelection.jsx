@@ -18,7 +18,7 @@ export default function ProfessionalSelection() {
       const fetchTeam = async () => {
         setLoading(true);
         try {
-          const response = await axios.get(`http://localhost:5000/api/team/business/${business.id}`);  // Use `business.id`
+          const response = await axios.get(`https://glowhaus-full-stack.onrender.com/api/team/business/${business.id}`);  // Use `business.id`
           console.log("API response: ", response.data);
           if (Array.isArray(response.data) && response.data.length > 0) {
             setTeamMembers(response.data);
@@ -104,7 +104,7 @@ export default function ProfessionalSelection() {
                 >
                   <div className="professional-info">
                     <img
-                      src={`http://localhost:5000/${member.photo || "uploads/default.jpg"}`}
+                      src={`https://glowhaus-full-stack.onrender.com/${member.photo || "uploads/default.jpg"}`}
                       alt={member.team_name}
                       className="professional-img"
                     />
@@ -122,7 +122,7 @@ export default function ProfessionalSelection() {
           <Card className="summary-card">
             <div className="summary-header">
               <img
-                src={business?.main_image ? `http://localhost:5000${business.main_image}` : "https://via.placeholder.com/60"}
+                src={business?.main_image ? `https://glowhaus-full-stack.onrender.com${business.main_image}` : "https://via.placeholder.com/60"}
                 alt="Salon"
                 className="salon-img"
               />

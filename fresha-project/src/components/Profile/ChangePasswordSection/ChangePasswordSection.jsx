@@ -27,7 +27,7 @@ const ChangePasswordSection = () => {
       const token = localStorage.getItem('token');
 
       const response = await axios.put(
-        'http://localhost:5000/api/customer/change-password',
+        'https://glowhaus-full-stack.onrender.com/api/customer/change-password',
         { currentPassword, newPassword },
         {
           headers: {

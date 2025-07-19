@@ -34,7 +34,7 @@ const ReviewsSection = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/reviews') // Replace with your specific API endpoint if needed
+    fetch('https://glowhaus-full-stack.onrender.com/api/reviews') // Replace with your specific API endpoint if needed
       .then((res) => res.json())
       .then((data) => {
         setReviews(data);

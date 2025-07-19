@@ -17,7 +17,7 @@ const HomePage = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    axios.get('http://localhost:5000/api/sections/display')
+    axios.get('https://glowhaus-full-stack.onrender.com/api/sections/display')
       .then((res) => {
         const allSections = res.data?.data?.sections || [];
         const filteredSections = allSections.filter(section =>

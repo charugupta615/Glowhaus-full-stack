@@ -21,9 +21,9 @@ const Services = () => {
     try {
       let res;
       if (businessId) {
-        res = await axios.get(`http://localhost:5000/api/service/business/${businessId}`);
+        res = await axios.get(`https://glowhaus-full-stack.onrender.com/api/service/business/${businessId}`);
       } else {
-        res = await axios.get('http://localhost:5000/api/service/display');
+        res = await axios.get('https://glowhaus-full-stack.onrender.com/api/service/display');
       }
       setServices(res.data);
     } catch (err) {
@@ -33,7 +33,7 @@ const Services = () => {
 
   const fetchBusinesses = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/business/display');
+      const res = await axios.get('https://glowhaus-full-stack.onrender.com/api/business/display');
       if (res.data && Array.isArray(res.data)) {
         setBusinesses(res.data.map(item => item.business));
       }
@@ -45,7 +45,7 @@ const Services = () => {
   const fetchServiceTypes = async (businessId) => {
     if (!businessId) return;
     try {
-      const res = await axios.get(`http://localhost:5000/api/service-type/business/${businessId}`);
+      const res = await axios.get(`https://glowhaus-full-stack.onrender.com/api/service-type/business/${businessId}`);
       if (res.data && Array.isArray(res.data)) {
         setServiceTypes(res.data);
       } else {
@@ -72,7 +72,7 @@ const Services = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/service/delete/${id}`);
+      await axios.delete(`https://glowhaus-full-stack.onrender.com/api/service/delete/${id}`);
       message.success('Service deleted');
       fetchServices(businessId);
     } catch {
@@ -93,10 +93,10 @@ const Services = () => {
   const handleFinish = async (values) => {
     try {
       if (editingService) {
-        await axios.put(`http://localhost:5000/api/service/update/${editingService.id}`, values);
+        await axios.put(`https://glowhaus-full-stack.onrender.com/api/service/update/${editingService.id}`, values);
         message.success('Service updated');
       } else {
-        await axios.post('http://localhost:5000/api/service/create', values);
+        await axios.post('https://glowhaus-full-stack.onrender.com/api/service/create', values);
         message.success('Service created');
       }
       fetchServices(businessId);
@@ -108,7 +108,7 @@ const Services = () => {
 
   const handleServiceTypeFinish = async (values) => {
     try {
-      await axios.post('http://localhost:5000/api/service-type/create', {
+      await axios.post('https://glowhaus-full-stack.onrender.com/api/service-type/create', {
         ...values,
         business_id: businessId
       });

@@ -30,7 +30,7 @@
 //       }
 
 //       try {
-//         const response = await axios.get(`http://localhost:5000/api/customer/${customerId}`, {
+//         const response = await axios.get(`https://glowhaus-full-stack.onrender.com/api/customer/${customerId}`, {
 //           headers: {
 //             Authorization: `Bearer ${token}`,
 //           },
@@ -141,7 +141,7 @@ const ProfilePage = () => {
       }
 
       try {
-        const response = await axios.get(`http://localhost:5000/api/customer/${customerId}`, {
+        const response = await axios.get(`https://glowhaus-full-stack.onrender.com/api/customer/${customerId}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },

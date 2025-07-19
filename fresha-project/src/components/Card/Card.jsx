@@ -19,7 +19,7 @@ const Card = ({ data }) => {
 
   return (
     <div className="card" onClick={handleNavigate}>
-      <img src={`http://localhost:5000${imagePath}`} alt={data.name} />
+      <img src={`https://glowhaus-full-stack.onrender.com${imagePath}`} alt={data.name} />
       <div className="card-details">
         <h3 className="hsec">{data.name}</h3>
         <p>

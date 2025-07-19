@@ -23,7 +23,7 @@ const Teams = ({ teamData }) => {
               <div className="team-content">
                 <div className="image-container">
                   <img
-                    src={member.photo ? `http://localhost:5000/uploads/${member.photo}` : 'path/to/fallback/image.jpg'}
+                    src={member.photo ? `https://glowhaus-full-stack.onrender.com/uploads/${member.photo}` : 'path/to/fallback/image.jpg'}
                     alt={member.team_name}
                     className="team-image"
                   />

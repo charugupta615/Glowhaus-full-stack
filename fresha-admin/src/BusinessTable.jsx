@@ -48,7 +48,7 @@
 
 //   const fetchBusinesses = async () => {
 //     try {
-//       const res = await axios.get('http://localhost:5000/api/display/display');
+//       const res = await axios.get('https://glowhaus-full-stack.onrender.com/api/display/display');
 //       const allBusinesses = [];
 
 //       res.data.sections.forEach((section) => {
@@ -73,7 +73,7 @@
 
 //   const fetchCategories = async () => {
 //     try {
-//       const res = await axios.get('http://localhost:5000/api/categories/display');
+//       const res = await axios.get('https://glowhaus-full-stack.onrender.com/api/categories/display');
 //       setCategories(res.data);
 //     } catch (error) {
 //       console.error('Error fetching categories:', error);
@@ -115,14 +115,14 @@
 //     try {
 //       if (editingBusiness) {
 //         await axios.put(
-//           `http://localhost:5000/api/business/update/${editingBusiness.id}`,
+//           `https://glowhaus-full-stack.onrender.com/api/business/update/${editingBusiness.id}`,
 //           formData,
 //           { headers: { 'Content-Type': 'multipart/form-data' } }
 //         );
 //         message.success('Business updated successfully!');
 //       } else {
 //         await axios.post(
-//           'http://localhost:5000/api/business/create',
+//           'https://glowhaus-full-stack.onrender.com/api/business/create',
 //           formData,
 //           { headers: { 'Content-Type': 'multipart/form-data' } }
 //         );
@@ -163,7 +163,7 @@
 
 //   const handleDelete = async (id) => {
 //     try {
-//       await axios.delete(`http://localhost:5000/api/business/delete/${id}`);
+//       await axios.delete(`https://glowhaus-full-stack.onrender.com/api/business/delete/${id}`);
 //       message.success('Business deleted successfully!');
 //       fetchBusinesses();
 //     } catch (error) {
@@ -203,7 +203,7 @@
 
 //   const handleStatusChange = async (id, value) => {
 //     try {
-//       await axios.put(`http://localhost:5000/api/business/update-status/${id}`, { status: value });
+//       await axios.put(`https://glowhaus-full-stack.onrender.com/api/business/update-status/${id}`, { status: value });
 //       message.success('Status updated');
 //       fetchBusinesses();
 //     } catch (err) {
@@ -216,7 +216,7 @@
 //       title: 'Image',
 //       dataIndex: 'main_image',
 //       key: 'main_image',
-//       render: (main_image) => <Image width={80} src={`http://localhost:5000${main_image}`} />,
+//       render: (main_image) => <Image width={80} src={`https://glowhaus-full-stack.onrender.com${main_image}`} />,
 //     },
 //     { title: 'Name', dataIndex: 'name', key: 'name' },
 //     { title: 'Slug', dataIndex: 'slug', key: 'slug' },
@@ -376,7 +376,7 @@
 //       >
 //         {previewBusiness && (
 //           <div>
-//             <Image width={200} src={`http://localhost:5000${previewBusiness.image}`} />
+//             <Image width={200} src={`https://glowhaus-full-stack.onrender.com${previewBusiness.image}`} />
 //             <p><strong>Name:</strong> {previewBusiness.name}</p>
 //             <p><strong>Slug:</strong> {previewBusiness.slug}</p>
 //             <p><strong>Address:</strong> {previewBusiness.address}</p>
@@ -450,7 +450,7 @@ const BusinessTable = () => {
 
   const fetchBusinesses = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/display/display');
+      const res = await axios.get('https://glowhaus-full-stack.onrender.com/api/display/display');
       const allBusinesses = [];
 
       res.data.sections.forEach((section) => {
@@ -475,7 +475,7 @@ const BusinessTable = () => {
 
   const fetchCategories = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/categories/display');
+      const res = await axios.get('https://glowhaus-full-stack.onrender.com/api/categories/display');
       setCategories(res.data);
     } catch (error) {
       console.error('Error fetching categories:', error);
@@ -514,14 +514,14 @@ const BusinessTable = () => {
     try {
       if (editingBusiness) {
         await axios.put(
-          `http://localhost:5000/api/business/update/${editingBusiness.id}`,
+          `https://glowhaus-full-stack.onrender.com/api/business/update/${editingBusiness.id}`,
           formData,
           { headers: { 'Content-Type': 'multipart/form-data' } }
         );
         message.success('Business updated successfully!');
       } else {
         await axios.post(
-          'http://localhost:5000/api/business/create',
+          'https://glowhaus-full-stack.onrender.com/api/business/create',
           formData,
           { headers: { 'Content-Type': 'multipart/form-data' } }
         );
@@ -560,7 +560,7 @@ const BusinessTable = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/business/delete/${id}`);
+      await axios.delete(`https://glowhaus-full-stack.onrender.com/api/business/delete/${id}`);
       message.success('Business deleted successfully!');
       fetchBusinesses();
     } catch (error) {
@@ -600,7 +600,7 @@ const BusinessTable = () => {
 
   const handleStatusChange = async (id, value) => {
     try {
-      await axios.put(`http://localhost:5000/api/business/update-status/${id}`, { status: value });
+      await axios.put(`https://glowhaus-full-stack.onrender.com/api/business/update-status/${id}`, { status: value });
       message.success('Status updated');
       fetchBusinesses();
     } catch (err) {
@@ -613,7 +613,7 @@ const BusinessTable = () => {
       title: 'Image',
       dataIndex: 'main_image',
       key: 'main_image',
-      render: (main_image) => <Image width={80} src={`http://localhost:5000${main_image}`} />,
+      render: (main_image) => <Image width={80} src={`https://glowhaus-full-stack.onrender.com${main_image}`} />,
     },
     {
       title: 'Name',
@@ -780,7 +780,7 @@ const BusinessTable = () => {
       >
         {previewBusiness && (
           <div>
-            <Image width={200} src={`http://localhost:5000${previewBusiness.image}`} />
+            <Image width={200} src={`https://glowhaus-full-stack.onrender.com${previewBusiness.image}`} />
             <p><strong>Name:</strong> {previewBusiness.name}</p>
             <p><strong>Slug:</strong> {previewBusiness.slug}</p>
             <p><strong>Address:</strong> {previewBusiness.address}</p>

@@ -42,7 +42,7 @@
 //         <Row gutter={[24, 24]}>
 //           <Col xs={24} sm={8}>
 //             <Image
-//               src={`http://localhost:5000${biz.main_image}`}
+//               src={`https://glowhaus-full-stack.onrender.com${biz.main_image}`}
 //               alt={biz.name}
 //               style={{ borderRadius: '12px' }}
 //               width="100%"
@@ -193,7 +193,7 @@ const BusinessDashboard = () => {
         <Row gutter={[24, 24]}>
           <Col xs={24} sm={8}>
             <Image
-              src={`http://localhost:5000${biz.main_image}`}
+              src={`https://glowhaus-full-stack.onrender.com${biz.main_image}`}
               alt={biz.name}
               style={{ borderRadius: '12px' }}
               width="100%"

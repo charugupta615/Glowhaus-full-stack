@@ -22,7 +22,7 @@ const Login = () => {
     setLoading(true);
 
     try {
-      const response = await axios.post('http://localhost:5000/api/customer/login', formData);
+      const response = await axios.post('https://glowhaus-full-stack.onrender.com/api/customer/login', formData);
 
       const { token, customer } = response.data;
 

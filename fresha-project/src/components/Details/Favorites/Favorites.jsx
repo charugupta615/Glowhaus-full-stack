@@ -13,7 +13,7 @@ const Favorites = () => {
   useEffect(() => {
     const fetchFavorites = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/api/favorites/display/${customerId}`);
+        const res = await axios.get(`https://glowhaus-full-stack.onrender.com/api/favorites/display/${customerId}`);
         setFavorites(res.data);
       } catch (error) {
         if (error.response?.status === 404) {
@@ -62,7 +62,7 @@ const Favorites = () => {
                 onClick={() => handleBusinessClick(fav.business.slug)}
               >
                 <img
-                  src={`http://localhost:5000${fav.business.images[0]}`}
+                  src={`https://glowhaus-full-stack.onrender.com${fav.business.images[0]}`}
                   alt={fav.business.name}
                   className="store-image"
                 />

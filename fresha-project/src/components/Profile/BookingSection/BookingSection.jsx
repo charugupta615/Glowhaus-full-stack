@@ -12,7 +12,7 @@ const BookingsSection = () => {
     const fetchBookings = async () => {
       try {
         const customerId = localStorage.getItem("customerId");
-        const response = await axios.get(`http://localhost:5000/api/booking/customer/${customerId}`);
+        const response = await axios.get(`https://glowhaus-full-stack.onrender.com/api/booking/customer/${customerId}`);
         setBookings(response.data.bookings || []);
       } catch (error) {
         console.error("Error fetching bookings:", error);
@@ -30,7 +30,7 @@ const BookingsSection = () => {
     try {
       console.log("Attempting to cancel booking with ID:", bookingId);
       
-      const response = await axios.delete(`http://localhost:5000/api/booking/${bookingId}`);
+      const response = await axios.delete(`https://glowhaus-full-stack.onrender.com/api/booking/${bookingId}`);
       
       if (response.data?.message === "Booking cancelled successfully") {
         message.success("Booking canceled successfully!");

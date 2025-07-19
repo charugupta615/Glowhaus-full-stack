@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Form, Input, Button, message, Card } from "antd";
 import axios from "axios";
 
-const API_BASE_URL = "http://localhost:5000"; // Change to your backend API URL
+const API_BASE_URL = "https://glowhaus-full-stack.onrender.com"; // Change to your backend API URL
 
 const AdminLogin = () => {
   const [loading, setLoading] = useState(false);

@@ -30,7 +30,7 @@
 //   const [sectionTitle, setSectionTitle] = useState('Trending');
 
 //   useEffect(() => {
-//     axios.get('http://localhost:5000/api/sections/display')
+//     axios.get('https://glowhaus-full-stack.onrender.com/api/sections/display')
 //       .then((res) => {
 //         if (res.data?.data?.sections) {
 //           // Find the trending section

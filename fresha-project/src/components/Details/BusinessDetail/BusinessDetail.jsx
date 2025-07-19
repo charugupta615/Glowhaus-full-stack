@@ -33,14 +33,14 @@ const BusinessDetail = () => {
 
   const fetchBusinessData = async () => {
     try {
-      const res = await axios.get(`http://localhost:5000/api/business/display/slug/${slug}`);
+      const res = await axios.get(`https://glowhaus-full-stack.onrender.com/api/business/display/slug/${slug}`);
       setBusiness(res.data.business);
       setServices(res.data.services);
       setTeam(res.data.team);
       setReviews(res.data.reviews);
 
       if (customerId && res.data?.business?.id) {
-        const { data: favData } = await axios.get(`http://localhost:5000/api/favorites/display/${customerId}`);
+        const { data: favData } = await axios.get(`https://glowhaus-full-stack.onrender.com/api/favorites/display/${customerId}`);
         const isFav = favData.some((fav) => fav.business.id === res.data.business.id);
         setIsFavorite(isFav);
       }
@@ -55,8 +55,8 @@ const BusinessDetail = () => {
     }
 
     const endpoint = isFavorite
-      ? 'http://localhost:5000/api/favorites/remove'
-      : 'http://localhost:5000/api/favorites/add';
+      ? 'https://glowhaus-full-stack.onrender.com/api/favorites/remove'
+      : 'https://glowhaus-full-stack.onrender.com/api/favorites/add';
     const method = isFavorite ? 'DELETE' : 'POST';
 
     try {
@@ -126,20 +126,20 @@ const BusinessDetail = () => {
 
         <div className="images-section">
           <img
-            src={`http://localhost:5000${business.main_image}`}
+            src={`https://glowhaus-full-stack.onrender.com${business.main_image}`}
             alt="Main"
             className="main-image"
             onClick={handleSeeAllImages}
           />
           <div className="sub-images">
             <img
-              src={`http://localhost:5000${business.side_image}`}
+              src={`https://glowhaus-full-stack.onrender.com${business.side_image}`}
               alt="Side View"
               onClick={handleSeeAllImages}
             />
             <div className="see-all-container">
               <img
-                src={`http://localhost:5000${business.side_image1}`}
+                src={`https://glowhaus-full-stack.onrender.com${business.side_image1}`}
                 alt="Side View 2"
                 onClick={handleSeeAllImages}
               />

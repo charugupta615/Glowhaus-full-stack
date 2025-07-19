@@ -22,7 +22,7 @@ const Register = () => {
     setLoading(true);
     console.log(formData);  // Start loading
     try {
-      const response = await axios.post('http://localhost:5000/api/customer/register', formData);
+      const response = await axios.post('https://glowhaus-full-stack.onrender.com/api/customer/register', formData);
       if(isSuccessful) {
         setIsSuccessful(true);
         console.log('Registration response:', response.data); // Log the response data

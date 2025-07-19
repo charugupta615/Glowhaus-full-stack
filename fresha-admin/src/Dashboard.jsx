@@ -110,7 +110,7 @@ export default Dashboard;
 
 //   const fetchStats = async () => {
 //     try {
-//       const res = await axios.get('http://localhost:5000/api/admin/stats'); // You’ll need to create this endpoint
+//       const res = await axios.get('https://glowhaus-full-stack.onrender.com/api/admin/stats'); // You’ll need to create this endpoint
 //       setStats(res.data);
 //     } catch {
 //       message.error('Failed to fetch stats');
@@ -119,7 +119,7 @@ export default Dashboard;
 
 //   const fetchChartData = async () => {
 //     try {
-//       const res = await axios.get('http://localhost:5000/api/bookings/chart-data'); // You’ll need to create this endpoint
+//       const res = await axios.get('https://glowhaus-full-stack.onrender.com/api/bookings/chart-data'); // You’ll need to create this endpoint
 //       setBookingData(res.data);
 //     } catch {
 //       message.error('Failed to fetch chart data');
@@ -128,7 +128,7 @@ export default Dashboard;
 
 //   const fetchRecentActivities = async () => {
 //     try {
-//       const res = await axios.get('http://localhost:5000/api/admin/recent-activities'); // Custom endpoint
+//       const res = await axios.get('https://glowhaus-full-stack.onrender.com/api/admin/recent-activities'); // Custom endpoint
 //       setActivities(res.data);
 //     } catch {
 //       message.error('Failed to fetch recent activities');

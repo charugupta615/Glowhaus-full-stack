@@ -10,7 +10,7 @@
 //   const handleLogin = async (values) => {
 //     setLoading(true);
 //     try {
-//       const res = await axios.post('http://localhost:5000/api/businessUser/login', values);
+//       const res = await axios.post('https://glowhaus-full-stack.onrender.com/api/businessUser/login', values);
 //       const { token } = res.data;
 //       localStorage.setItem('business_token', token); // Store token in localStorage
 //       message.success('Login successful!');
@@ -51,7 +51,7 @@ const BusinessLogin = () => {
   const onFinish = (values) => {
     setLoading(true);
     axios
-      .post("http://localhost:5000/api/business/login", values)
+      .post("https://glowhaus-full-stack.onrender.com/api/business/login", values)
       .then((res) => {
         message.success("Login successful");
         localStorage.setItem("businessToken", res.data.token);

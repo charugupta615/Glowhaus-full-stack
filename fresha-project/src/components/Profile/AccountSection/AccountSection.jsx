@@ -34,7 +34,7 @@ const AccountSection = ({ customerData, setCustomerData }) => {
 
     try {
       const response = await axios.put(
-        `http://localhost:5000/api/customer/display/${customerId}`,
+        `https://glowhaus-full-stack.onrender.com/api/customer/display/${customerId}`,
         customerData,
         {
           headers: {

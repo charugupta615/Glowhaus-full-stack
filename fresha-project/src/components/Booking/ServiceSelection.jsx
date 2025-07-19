@@ -28,8 +28,8 @@ export default function ServiceSelection() {
     const fetchData = async () => {
       try {
         const [servicesRes, typesRes] = await Promise.all([
-          axios.get(`http://localhost:5000/api/service/business/${business.id}`),
-          axios.get(`http://localhost:5000/api/service-type/business/${business.id}`),
+          axios.get(`https://glowhaus-full-stack.onrender.com/api/service/business/${business.id}`),
+          axios.get(`https://glowhaus-full-stack.onrender.com/api/service-type/business/${business.id}`),
         ]);
 
         const services = servicesRes.data;
@@ -195,7 +195,7 @@ export default function ServiceSelection() {
               <img
                 src={
                   business?.main_image
-                    ? `http://localhost:5000${business.main_image}`
+                    ? `https://glowhaus-full-stack.onrender.com${business.main_image}`
                     : "https://via.placeholder.com/60"
                 }
                 alt="Salon"

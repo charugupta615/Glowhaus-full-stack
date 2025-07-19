@@ -45,7 +45,10 @@ app.use('/api/admin', adminRoutes);
 const db = require('./config/db'); 
 
 db.getConnection((err) => {
-  if (err) throw err;
+  if (err) {
+    console.error('❌ Database connection failed:', err);
+    return;
+  }
   console.log('✅ Database is connected!');
   app.listen(PORT, () => {
     console.log(`✅ Server is running on http://localhost:${PORT}`);

@@ -17,7 +17,7 @@ const SelectServices = () => {
     }
 
     // Fetch services for the selected store
-    axios.get(`http://localhost:5000/api/service/store/${state.store.id}`)
+    axios.get(`https://glowhaus-full-stack.onrender.com/api/service/store/${state.store.id}`)
       .then(res => setServices(res.data)) // Store the fetched services in state
       .catch(err => console.error('Failed to fetch services:', err));
   }, [state, navigate]);

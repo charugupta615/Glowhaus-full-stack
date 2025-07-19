@@ -41,7 +41,7 @@ export default function TimeSelection() {
       if (!selectedProfessional || !selectedDate) return;
       try {
         const formattedDate = selectedDate.toISOString().split("T")[0];
-        const res = await axios.get("http://localhost:5000/api/slot/booked", {
+        const res = await axios.get("https://glowhaus-full-stack.onrender.com/api/slot/booked", {
           params: {
             team_id: selectedProfessional.id,
             selected_date: formattedDate,
@@ -101,7 +101,7 @@ export default function TimeSelection() {
         time: selectedTime,
       };
 
-      const res = await axios.post("http://localhost:5000/api/booking/create/booking", payload);
+      const res = await axios.post("https://glowhaus-full-stack.onrender.com/api/booking/create/booking", payload);
       if (res.status === 201 || res.data.message === "Booking created successfully") {
         message.success("Booking confirmed!");
         setBookedSlots((prev) => [...prev, selectedTime]);
@@ -190,7 +190,7 @@ export default function TimeSelection() {
               <img
                 src={
                   business?.main_image
-                    ? `http://localhost:5000${business.main_image}`
+                    ? `https://glowhaus-full-stack.onrender.com${business.main_image}`
                     : "https://via.placeholder.com/60"
                 }
                 alt="Salon"

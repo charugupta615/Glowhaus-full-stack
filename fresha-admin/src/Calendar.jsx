@@ -20,7 +20,7 @@ const Calendar = () => {
   // Fetch team members for dropdown
   useEffect(() => {
     axios
-      .get('http://localhost:5000/api/team/display')
+      .get('https://glowhaus-full-stack.onrender.com/api/team/display')
       .then((res) => {
         console.log('Team members response:', res.data);
         setTeamMembers(res.data || []);
@@ -33,8 +33,8 @@ const Calendar = () => {
   // Fetch bookings
   useEffect(() => {
     const url = selectedTeamId
-      ? `http://localhost:5000/api/booking/team/${selectedTeamId}`
-      : `http://localhost:5000/api/booking/admin/all`;
+      ? `https://glowhaus-full-stack.onrender.com/api/booking/team/${selectedTeamId}`
+      : `https://glowhaus-full-stack.onrender.com/api/booking/admin/all`;
 
     axios
       .get(url)

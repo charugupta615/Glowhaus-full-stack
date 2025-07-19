@@ -16,7 +16,7 @@ const StoreInfo = ({ slug }) => {
     setLoading(true);
     setError(null);
 
-    axios.get(`http://localhost:5000/api/business/display/slug/${slug}`)
+    axios.get(`https://glowhaus-full-stack.onrender.com/api/business/display/slug/${slug}`)
       .then((res) => {
         console.log("Fetched business:", res.data.business);
         setStore(res.data.business);

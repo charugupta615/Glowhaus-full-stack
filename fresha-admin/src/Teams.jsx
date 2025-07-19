@@ -6,7 +6,7 @@ import { UploadOutlined, PlusOutlined } from '@ant-design/icons';
 import axios from 'axios';
 
 const { Option } = Select;
-const API_BASE = 'http://localhost:5000/api/team';
+const API_BASE = 'https://glowhaus-full-stack.onrender.com/api/team';
 
 const Teams = () => {
   const [team, setTeam] = useState([]);
@@ -32,7 +32,7 @@ const Teams = () => {
   // Fetch all businesses
   const fetchBusinesses = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/business/display');
+      const res = await axios.get('https://glowhaus-full-stack.onrender.com/api/business/display');
       if (res.data && Array.isArray(res.data)) {
         // Map over the response and extract business names and IDs
         const businessList = res.data.map(item => item.business);
@@ -105,7 +105,7 @@ const Teams = () => {
       dataIndex: 'photo',
       render: (photo) =>
         photo ? (
-          <img src={`http://localhost:5000/${photo}`} alt="Team" width={50} />
+          <img src={`https://glowhaus-full-stack.onrender.com/${photo}`} alt="Team" width={50} />
         ) : 'No Photo',
     },
     { title: 'Name', dataIndex: 'team_name' },

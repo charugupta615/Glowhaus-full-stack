@@ -12,7 +12,7 @@ const Bookings = () => {
 
   const fetchBusinesses = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/business/display');
+      const response = await axios.get('https://glowhaus-full-stack.onrender.com/api/business/display');
       if (response.data && Array.isArray(response.data)) {
         setBusinesses(response.data);
       } else {
@@ -27,7 +27,7 @@ const Bookings = () => {
   const fetchBookings = async () => {
     setLoading(true);
     try {
-      const response = await axios.get('http://localhost:5000/api/booking/admin/all');
+      const response = await axios.get('https://glowhaus-full-stack.onrender.com/api/booking/admin/all');
       const formattedData = Array.isArray(response.data.bookings)
         ? response.data.bookings.map((booking, index) => ({
             key: index,
